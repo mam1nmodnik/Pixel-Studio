@@ -1,0 +1,112 @@
+:root{
+  --blue: #006FEE;
+  --white: #FFFFFF;
+  --black-opacity: #11111126;
+}
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 2rem 0 2rem;
+}
+.head {
+  width: auto;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head_logo{
+  display: flex;
+  align-items: center;
+}
+.head_logo .name_logo{
+  margin-left: 0.375rem;
+  color: var(--blue);
+}
+.head_menu{
+  height: max-content;
+  display: flex;
+}
+.head_menu div{
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+}
+.head_menu > div:not(:last-of-type) {
+  border-right: 1px solid rgba(0, 0, 0, 0.329);
+}
+.head_menu > div:last-of-type{
+  border-bottom-right-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.head_menu > div:first-of-type{
+  border-bottom-left-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+}
+.promo{
+  padding: 4rem;
+  border-radius: 4rem;
+  background: linear-gradient(#E0EEFF, #FFE6E6);
+  display: flex;
+}
+.promo .childrenWrap{
+  width: 5.688rem;
+  height: 2.75rem;
+  text-align: center;
+  align-content: center;
+  border: 1px solid var(--blue);
+  border-radius: 4rem;
+}
+.promo-content{
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promo-text{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.promo-btn{
+  width: 100%;
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 100rem;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+.promo-img{
+  width: 36rem;
+  height: 37rem;
+  cursor: pointer;
+  content: inherit;
+}
+.courses-title{
+  display: flex;
+  align-items: center;
+}
+.courses-line{
+  width: 51rem;
+  height: 0;
+  border: 1px solid var(--black-opacity);
+}
+.courses-title p{
+  margin: 0 2rem 0 2rem;
+}
+.heart{
+  color: black;
+}
