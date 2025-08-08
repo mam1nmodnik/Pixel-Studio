@@ -2,6 +2,11 @@
   --blue: #006FEE;
   --white: #FFFFFF;
   --black-opacity: #11111126;
+  --gray: #D4D4D866;
+  --gray-opacity: #FAFAFA;
+  --grean: #17C964;
+  --grean-opacity: #17C96433;
+  --orange:#F5A524;
 }
 *,
 *::before,
@@ -13,11 +18,12 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
-body{
+
+.body{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin: 0 2rem 0 2rem;
+  gap: 32px;
+  margin: 0 2rem 32px 2rem;
 }
 .head {
   width: auto;
@@ -55,6 +61,11 @@ body{
   border-bottom-left-radius: 0.75rem;
   border-top-left-radius: 0.75rem;
 }
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .promo{
   padding: 4rem;
   border-radius: 4rem;
@@ -74,6 +85,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 32px;
 }
 .promo-text{
   display: flex;
@@ -96,11 +108,13 @@ body{
   content: inherit;
 }
 .courses-title{
-  display: flex;
+  display: grid;
+  justify-items: center;
   align-items: center;
+  grid-template-columns: 1.25fr 0.5fr 1.25fr;
 }
 .courses-line{
-  width: 51rem;
+  width: 100%;
   height: 0;
   border: 1px solid var(--black-opacity);
 }
@@ -109,4 +123,167 @@ body{
 }
 .heart{
   color: black;
+}
+.courses-container{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 37.667rem;
+  min-width: 23rem;
+  height: 15.5rem;
+  padding: 32px;
+  border-radius: 32px;
+  border: 1px solid var(--gray);
+  background-color: var(--gray-opacity);
+}
+
+.container-text{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.courses-container .text-user, .user-name, .user-point{
+  display: flex;
+}
+.courses-container .text-user{
+  gap: 10px;
+}
+.courses-container  .user-name{
+  width: max-content;
+  height: max-content;
+  padding: 0.25rem 0.35rem 0.25rem 0.35rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--gray);
+}
+.courses-container  .user-point{
+  width: max-content;
+  height: max-content;
+  padding: 0.25rem 0.35rem 0.25rem 0.35rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--gray);
+}
+
+.courses-container img{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.courses-container .container-btn{
+  width: 6.813rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+
+.reviewColorGrean{
+  color: var(--grean);
+}
+
+.reviewColorOrange{
+  color: var(--orange);
+}
+
+#dateReview{
+  color: var(--gray);
+}
+.reviews{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.reviews-container{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 26.25rem;
+  max-width: 26.25rem;
+  height: 11rem;
+  padding: 32px;
+  border-radius: 32px;
+  border: 1px solid var(--gray);
+  background-color: var(--gray-opacity);
+}
+.reviews .text-user{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews .user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews-container  .user-name{
+  width: max-content;
+  height: max-content;
+  padding: 0.25rem 0.35rem 0.25rem 0.35rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--gray);
+}
+.reviews-container  .user-point{
+  width: max-content;
+  height: max-content;
+  padding: 0.25rem 0.35rem 0.25rem 0.35rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--grean-opacity);
+}
+.reviews-item{
+  display: flex;
+  gap:16px;
+  overflow: scroll;
+}
+
+/* .reviews-scroll{
+  box-shadow: 0 15px 30px 10px rgba(0, 0, 0, .5) inset;
+} */
+
+.footer{
+  width: 100%;
+  height: 20.932rem;
+  background-color: var(--gray);
+  padding: 64px 32px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-line{
+  width: 0px;
+  height: 28px;
+  border: 1px solid var(--gray);
+}
+.footer-link{
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  color: var(--blue);
+  
+}
+.footer-link a{
+  color: var(--blue);
 }
