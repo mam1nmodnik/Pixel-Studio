@@ -57,3 +57,9 @@ const scrollInforeviews = () => {
     return div;
 };
 scrollInforeviews();
+
+
+$('.toggle-menu').on('click', function(){
+    $('.popup').toggleClass('active');
+    $('body').toggleClass('block-scroll');
+});

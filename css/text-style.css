@@ -81,3 +81,23 @@
     font-size: 2.75rem;
 }
 
+
+@media (840px <= width <= 1024px) {
+    .inter-600-72px{
+        font-size: 2.875rem;
+        line-height: 3.25rem;
+    }
+    
+}
+@media (0px <= width <= 840px) {
+    .inter-600-72px{
+        font-weight: 500;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+    .inter-400-36px{
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
