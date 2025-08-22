@@ -1,6 +1,6 @@
 
-
-const courseInfo = () => {
+// information about courses
+export const courseInfo = () => {
     let div = document.getElementsByClassName('courses-container');
     const contentCourse = `
                 <div class="container">
@@ -29,9 +29,8 @@ const courseInfo = () => {
     return div;
 }
 
-courseInfo();
-
-const scrollInforeviews = () => {
+// reviews
+export const scrollInforeviews = () => {
     let div = document.getElementsByClassName('reviews-item');
     const contentReviews = `
     <div class="reviews-container">
@@ -56,10 +55,6 @@ const scrollInforeviews = () => {
     }
     return div;
 };
-scrollInforeviews();
 
 
-$('.toggle-menu').on('click', function(){
-    $('.popup').toggleClass('active');
-    $('body').toggleClass('block-scroll');
-});
+
